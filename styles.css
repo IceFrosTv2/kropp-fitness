@@ -764,7 +764,7 @@ input[type=number] {
 
 #location-map-wrapper {
     position: relative;
-    width: 960px;
+    width: clamp(300px, 45vw, 960px);
     aspect-ratio: 8 / 5;
     display: inline-block;
 }
@@ -1103,6 +1103,11 @@ input[type=number] {
     .training-types-list {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    #location-map-wrapper {
+        aspect-ratio: auto;
+        height: auto;
+    }
 }
 
 @media (width < 1024px) {
@@ -1152,7 +1157,12 @@ input[type=number] {
         flex-direction: column-reverse;
     }
 
-    .family-image {
+    #location-map-wrapper {
+        margin-inline: 15px;
+        width: auto;
+    }
+
+        .family-image {
         height: 360px;
     }
 
