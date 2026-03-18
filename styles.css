@@ -1105,8 +1105,7 @@ input[type=number] {
     }
 
     #location-map-wrapper {
-        aspect-ratio: auto;
-        height: auto;
+        height: 100%;
     }
 }
 
@@ -1159,7 +1158,7 @@ input[type=number] {
 
     #location-map-wrapper {
         margin-inline: 15px;
-        width: auto;
+        width: calc(100% - 30px);
     }
 
         .family-image {
